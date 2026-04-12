@@ -30,6 +30,7 @@ public interface Cipher {
         return simpletext.toString();
     }
 
+
     void encryptMessage();
     void decryptMessage();
 
