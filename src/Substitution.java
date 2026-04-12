@@ -7,14 +7,14 @@ public class Substitution implements Cipher {
 
 //    Constructor
     public Substitution(String key, String rawMessage) {
-        this.key = key;
+        this.key = key.toLowerCase();
         this.rawMessage = rawMessage;
         this.encryptedMessage = null;
     }
 
     public Substitution(String key, String encryptedMessage, boolean isEncrypted) {
 
-        this.key = key;
+        this.key = key.toLowerCase();
 
         if (isEncrypted) {
             this.rawMessage = null;

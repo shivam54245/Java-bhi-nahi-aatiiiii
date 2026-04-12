@@ -56,7 +56,7 @@ public interface Cipher {
             if(Character.isWhitespace(letter)) {
                 message.append(letter);
             } else {
-                int index = initial.indexOf(letter);
+                int index = initial.indexOf(Character.toLowerCase(letter));
                 message.append(replaceBy.charAt(index));
             }
         }
