@@ -1,4 +1,3 @@
-import java.beans.SimpleBeanInfo;
 
 public class Substitution implements Cipher {
     String key;
