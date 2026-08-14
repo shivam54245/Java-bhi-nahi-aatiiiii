@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RsaTest {
+public class ChunkReaderTest {
 
     @ParameterizedTest
     @CsvSource({
@@ -28,7 +28,7 @@ public class RsaTest {
             "12, 346730827310409109732957121716811388391323065415994265082820637952252805431839863831803204682820551822376815071534719281718020764210227596231092531016019240304728074042534550989397114008504201225883895062933345546879754556813089960347749712458003068613776697455629218443796364109241236261352280292149785715",
             "13, 307867837446641841282141261425506120196478825603137066774632383322242553027371338911588153776863650022997783354817156778292283592526221487398416818684240596354629931391596404773406427588841374474534682105670945894321718501572677758071503464624668728840875459349124091795356870624705306181716287205786255360",
     })
-    void chunkReaderTest(int index, BigInteger expectedOutput) throws IOException{
+    void TestChunkGeneration(int index, BigInteger expectedOutput) throws IOException{
         Path path = Path.of("Test Resources/testFile.txt");
         List<BigInteger> finalResult = new ArrayList<>();
         try (InputStream inputStream = Files.newInputStream(path)) {
@@ -41,8 +41,5 @@ public class RsaTest {
             assertEquals(expectedOutput, finalResult.get(index));
         }
     }
-
-    //TODO: Test RSA class for encryption, decryption, file handling and key validity tests
-    void
 
 }

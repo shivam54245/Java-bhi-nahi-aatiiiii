@@ -1,6 +1,6 @@
 # Java-bhi-nahi-aati-haiiii
 
-CS2112 stuff ig
+<h3> CS2112 STUFF </h3>
 <br>
 crazyyy
 <br> <br>
