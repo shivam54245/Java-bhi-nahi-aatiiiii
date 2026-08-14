@@ -1,11 +1,9 @@
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CipherTest {
 
-//for caesar
     @SuppressWarnings("SpellCheckingInspection")
     @ParameterizedTest
     @CsvSource({
@@ -32,7 +30,6 @@ class CipherTest {
         assertEquals(expectedOutput, caesar.encryptedMessage);
     }
 
-
     @SuppressWarnings("SpellCheckingInspection")
     @ParameterizedTest
     @CsvSource({
@@ -57,7 +54,6 @@ class CipherTest {
         caesar.decryptMessage();
         IO.println(expectedRawOutput + "\n" + caesar.rawMessage + "\n\n\n");
         assertEquals(expectedRawOutput, caesar.rawMessage);
-
     }
 }
 
