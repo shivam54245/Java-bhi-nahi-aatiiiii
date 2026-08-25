@@ -2,8 +2,9 @@
 
 <h3> CS2112 STUFF </h3>
 <br>
-crazyyy
 <br> <br>
 A0 - DONE!
 <br>
-A1 - Ugh!
+A1 - Incomplete but finished RSA so I'm done.
+<br>
+A2 - Soon....
